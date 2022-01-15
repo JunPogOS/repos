@@ -5,3 +5,14 @@ pkgrel=1
 pkgdesc="Collection of gui utilities"
 arch=('x86_64')
 depends=('qutebrowser' 'pcmanfm' 'keepassxc' 'remmina' 'claws-mail' 'gnucash' 'netsurf' 'mpv' 'qbittorrent')
+makedepends=('git')
+url="https://github.com/JunPogOS/configs"
+source=('junpog-gui::git+https://github.com/JunPogOS/configs.git')
+md5sums=('SKIP')
+
+package() {
+        mkdir -p "$pkgdir/$HOME/.config"
+        cd "$srcdir/${pkgname}/.config"
+        cp -r qutebrowser "$pkgdir/$HOME/.config/qutebrowser"
+}
+
