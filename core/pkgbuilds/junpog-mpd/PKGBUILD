@@ -1,0 +1,19 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-mpd'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Setup mpd and ncmpcpp"
+arch=('x86_64')
+depends=('mpd' 'ncmpcpp' 'mpc')
+makedepends=('git')
+url="https://github.com/Ocillacubes/junpog-dots"
+source=('junpog-mpd::git+https://github.com/Ocillacubes/junpog-dots.git')
+md5sums=('SKIP')
+
+package() {
+        mkdir -p "$pkgdir/$HOME/.config"
+        mkdir -p "$pkgdir/$HOME/.lyrics"
+        mkdir -p "$pkgdir/$HOME/music"
+        cp -r "$srcdir/${pkgname}/.config/ncmpcpp" "$pkgdir/$HOME/.config/ncmpcpp"
+        cp -r "$srcdir/${pkgname}/.config/mpd" "$pkgdir/$HOME/.config/mpd"
+}

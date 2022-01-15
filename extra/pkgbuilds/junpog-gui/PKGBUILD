@@ -1,0 +1,7 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-gui'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Collection of gui utilities"
+arch=('x86_64')
+depends=('qutebrowser' 'pcmanfm' 'keepassxc' 'remmina' 'claws-mail' 'gnucash' 'netsurf' 'mpv' 'qbittorrent')

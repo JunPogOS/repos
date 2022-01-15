@@ -1,0 +1,7 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-de'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Collection of programs that makeup the junpog DE"
+arch=('x86_64')
+depends=('feh' 'dmenu' 'arandr' 'lxappearance' 'dunst' 'lxsession' 'xorg-server' 'xorg-xinit' 'xterm' 'ttc-iosevka' 'ttf-hanazono')

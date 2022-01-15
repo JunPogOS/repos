@@ -1,0 +1,7 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-network'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Setup Network Manager"
+arch=('x86_64')
+depends=('networkmanager')

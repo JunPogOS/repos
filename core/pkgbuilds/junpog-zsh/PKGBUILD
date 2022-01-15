@@ -1,0 +1,18 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-zsh'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Zsh shell config"
+arch=('x86_64')
+depends=('zsh' 'zsh-autosuggestions' 'zsh-completions' 'zsh-syntax-highlighting')
+makedepends=('git')
+url="https://github.com/Ocillacubes/junpog-dots"
+source=('junpog-zsh::git+https://github.com/Ocillacubes/junpog-dots.git')
+md5sums=('SKIP')
+
+package() {
+        mkdir -p "$pkgdir/$HOME/.config"
+        cp "$srcdir/${pkgname}/.zshrc" "$pkgdir/$HOME/.zshrc"
+        cd "$srcdir/${pkgname}/.config"
+        cp -r zsh "$pkgdir/$HOME/.config/zsh"
+}
