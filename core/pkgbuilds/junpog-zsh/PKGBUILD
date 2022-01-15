@@ -6,8 +6,8 @@ pkgdesc="Zsh shell config"
 arch=('x86_64')
 depends=('zsh' 'zsh-autosuggestions' 'zsh-completions' 'zsh-syntax-highlighting')
 makedepends=('git')
-url="https://github.com/Ocillacubes/junpog-dots"
-source=('junpog-zsh::git+https://github.com/Ocillacubes/junpog-dots.git')
+url="https://github.com/JunPogOS/configs"
+source=('junpog-zsh::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
