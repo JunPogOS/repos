@@ -1,0 +1,229 @@
+-- The CXX compiler identification is GNU 11.1.0
+-- The C compiler identification is GNU 11.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+CMake Deprecation Warning at CMakeLists.txt:37 (cmake_policy):
+  The OLD behavior for policy CMP0026 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+Call Stack (most recent call first):
+  CMakeLists.txt:44 (set_policy)
+
+
+-- Performing Test HAVE_FLAG_Wall
+-- Performing Test HAVE_FLAG_Wall - Success
+-- Performing Test HAVE_FLAG_Wshorten_64_to_32
+-- Performing Test HAVE_FLAG_Wshorten_64_to_32 - Failed
+-- Performing Test HAVE_FLAG_fno_omit_frame_pointer
+-- Performing Test HAVE_FLAG_fno_omit_frame_pointer - Success
+-- Performing Test HAVE_FLAG_mmacosx_version_min=10.9
+-- Performing Test HAVE_FLAG_mmacosx_version_min=10.9 - Failed
+-- Performing Test HAVE_FLAG_/Oy_
+-- Performing Test HAVE_FLAG_/Oy_ - Failed
+-- Performing Test HAVE_FLAG_fvisibility_inlines_hidden
+-- Performing Test HAVE_FLAG_fvisibility_inlines_hidden - Success
+-- Performing Test HAVE_FLAG_/wd4244
+-- Performing Test HAVE_FLAG_/wd4244 - Failed
+-- Performing Test HAVE_FLAG_/wd4267
+-- Performing Test HAVE_FLAG_/wd4267 - Failed
+-- Performing Test HAVE_FLAG_flto
+-- Performing Test HAVE_FLAG_flto - Success
+-- Performing Test HAVE_FLAG_fuse_ld=gold
+-- Performing Test HAVE_FLAG_fuse_ld=gold - Success
+-- 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.0") 
+-- Not using bundled deps
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found PythonInterp: /usr/bin/python (found version "3.10.1") 
+-- Qt root directory: ./qt
+-- Qt version: 5.15.2
+-- Performing Test QT5_HAVE_OPTIMALORIENTATION
+-- Performing Test QT5_HAVE_OPTIMALORIENTATION - Failed
+CMake Warning (dev) at /usr/share/cmake/Modules/FindOpenGL.cmake:315 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  CMakeModules/PlayerConfiguration.cmake:2 (find_package)
+  CMakeLists.txt:53 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenGL: /usr/lib/libOpenGL.so   
+-- Found MPV: /usr/include  
+-- ./qt
+-- Found SDL2: /usr/include/SDL2  
+-- Performing Test ICONV_SECOND_ARGUMENT_IS_CONST
+-- Performing Test ICONV_SECOND_ARGUMENT_IS_CONST - Failed
+-- Found Iconv: /usr/lib/libc.so
+-- Found CEC: /usr/lib/libcec.so  
+-- Enabled Inputs: SDL2 CEC LIRC
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Enabling D-Bus power management
+-- clang-tidy not enabled, pass -DCMAKE_EXPORT_COMPILE_COMMANDS=on to cmake to enable it
+-- clang-tidy not enabled, pass -DCMAKE_EXPORT_COMPILE_COMMANDS=on to cmake to enable it
+-- Found ZLIB: /usr/lib/libz.so (found version "1.2.11") 
+-- Using minizip
+-- Configuring done
+CMake Warning (dev) in src/CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/build/src/qrc_resources.cpp"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: /build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/build
+[  1%] Automatic MOC for target qslog
+[  1%] Built target qslog_autogen
+[  2%] Building CXX object external/qslog/CMakeFiles/qslog.dir/qslog_autogen/mocs_compilation.cpp.o
+[  4%] Building CXX object external/qslog/CMakeFiles/qslog.dir/QsLog.cpp.o
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/external/qslog/QsLog.cpp: In destructor ‘QsLogging::Logger::Helper::~Helper()’:
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/external/qslog/QsLog.cpp:231:9: warning: ‘throw’ will always call ‘terminate’ [-Wterminate]
+  231 |         throw;
+      |         ^~~~~
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/external/qslog/QsLog.cpp:231:9: note: in C++11 destructors default to ‘noexcept’
+[  5%] Building CXX object external/qslog/CMakeFiles/qslog.dir/QsLogDest.cpp.o
+[  7%] Building CXX object external/qslog/CMakeFiles/qslog.dir/QsLogDestConsole.cpp.o
+[  8%] Building CXX object external/qslog/CMakeFiles/qslog.dir/QsLogDestFile.cpp.o
+[ 10%] Building CXX object external/qslog/CMakeFiles/qslog.dir/QsLogDestFunctor.cpp.o
+[ 11%] Linking CXX static library libqslog.a
+[ 11%] Built target qslog
+[ 13%] Automatic MOC for target qhttp
+[ 13%] Built target qhttp_autogen
+[ 14%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/qhttp_autogen/mocs_compilation.cpp.o
+[ 16%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpabstracts.cpp.o
+[ 17%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpclient.cpp.o
+[ 19%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpclientrequest.cpp.o
+[ 20%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpclientresponse.cpp.o
+[ 22%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpserver.cpp.o
+[ 23%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpserverconnection.cpp.o
+[ 25%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpserverrequest.cpp.o
+[ 26%] Building CXX object external/qhttp/CMakeFiles/qhttp.dir/src/qhttpserverresponse.cpp.o
+[ 28%] Building C object external/qhttp/CMakeFiles/qhttp.dir/3rdparty/http-parser/http_parser.c.o
+cc1: warning: command-line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+[ 29%] Linking CXX static library libqhttp.a
+[ 29%] Built target qhttp
+[ 31%] Automatic MOC for target shared
+[ 31%] Built target shared_autogen
+[ 32%] Building CXX object src/shared/CMakeFiles/shared.dir/shared_autogen/mocs_compilation.cpp.o
+[ 34%] Building CXX object src/shared/CMakeFiles/shared.dir/Paths.cpp.o
+[ 35%] Building CXX object src/shared/CMakeFiles/shared.dir/LocalJsonClient.cpp.o
+[ 37%] Building CXX object src/shared/CMakeFiles/shared.dir/LocalJsonServer.cpp.o
+[ 38%] Building CXX object src/shared/CMakeFiles/shared.dir/__/core/Version.cpp.o
+[ 40%] Building CXX object src/shared/CMakeFiles/shared.dir/Names.cpp.o
+[ 41%] Linking CXX static library libshared.a
+[ 41%] Built target shared
+[ 43%] Automatic MOC for target JellyfinMediaPlayer
+[ 43%] Built target JellyfinMediaPlayer_autogen
+[ 44%] Creating resources.qrc
+[ 46%] Generating qrc_resources.cpp
+[ 47%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/JellyfinMediaPlayer_autogen/mocs_compilation.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/main.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/core/ComponentManager.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/core/Globals.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/core/SignalManager.cpp.o
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/src/core/SignalManager.cpp: In static member function ‘static void SignalManager::signalHandler(int)’:
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/src/core/SignalManager.cpp:56:8: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   56 |   write(g_sigtermFd[0], &a, sizeof(a));
+      |   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/src/core/SignalManager.cpp: In member function ‘void SignalManager::handleSignal()’:
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/src/core/SignalManager.cpp:64:7: warning: ignoring return value of ‘ssize_t read(int, void*, size_t)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   64 |   read(g_sigtermFd[1], &signalNumber, sizeof(signalNumber));
+      |   ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 55%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/display/x11/DisplayManagerX11.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/display/dummy/DisplayManagerDummy.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/display/DisplayComponent.cpp.o
+[ 59%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/display/DisplayManager.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/player/PlayerComponent.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/player/PlayerQuickItem.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/player/CodecsComponent.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/player/OpenGLDetect.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/utils/CachedRegexMatcher.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/utils/PlatformUtils.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/utils/Utils.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/utils/Log.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/ui/ErrorMessage.cpp.o
+[ 74%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/ui/EventFilter.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/ui/KonvergoWindow.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/input/InputComponent.cpp.o
+[ 79%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/input/InputMapping.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/input/InputSocket.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/input/InputRoku.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/input/InputSDL.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/input/InputLIRC.cpp.o
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/src/input/InputLIRC.cpp: In member function ‘void InputLIRC::read(int)’:
+/build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/src/input/InputLIRC.cpp:92:38: warning: ‘QStringList QString::split(QChar, QString::SplitBehavior, Qt::CaseSensitivity) const’ is deprecated: Use Qt::SplitBehavior variant instead [-Wdeprecated-declarations]
+   92 |     QStringList cmdList = input.split(' ', QString::KeepEmptyParts);
+      |                           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt/QtCore/qcoreapplication.h:44,
+                 from /usr/include/qt/QtGui/qguiapplication.h:44,
+                 from /usr/include/qt/QtGui/QGuiApplication:1,
+                 from /build/jellyfin-media-player/src/jellyfin-media-player-1.6.1/src/input/InputLIRC.cpp:2:
+/usr/include/qt/QtCore/qstring.h:615:17: note: declared here
+  615 |     QStringList split(QChar sep, SplitBehavior behavior,
+      |                 ^~~~~
+[ 86%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/input/InputCEC.cpp.o
+[ 88%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/system/SystemComponent.cpp.o
+[ 89%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/settings/AudioSettingsController.cpp.o
+[ 91%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/settings/SettingsComponent.cpp.o
+[ 92%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/settings/SettingsSection.cpp.o
+[ 94%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/power/PowerComponent.cpp.o
+[ 95%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/power/PowerComponentDBus.cpp.o
+[ 97%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/taskbar/TaskbarComponent.cpp.o
+[ 98%] Building CXX object src/CMakeFiles/JellyfinMediaPlayer.dir/qrc_resources.cpp.o
+[100%] Linking CXX executable jellyfinmediaplayer
+[100%] Built target JellyfinMediaPlayer

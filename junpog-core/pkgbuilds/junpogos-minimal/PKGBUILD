@@ -1,0 +1,7 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpogos-minimal'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Minimal Installation of JunPogOS"
+arch=('x86_64')
+depends=('junbase' 'junpog-network' 'junutils' 'junpog-zsh')

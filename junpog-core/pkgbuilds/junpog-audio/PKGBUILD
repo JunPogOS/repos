@@ -1,0 +1,7 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-audio'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Setup pipewire"
+arch=('x86_64')
+depends=('pipewire' 'pipewire-pulse' 'pulsemixer')

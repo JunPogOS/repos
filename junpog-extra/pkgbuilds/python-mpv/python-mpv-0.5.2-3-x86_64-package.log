@@ -1,0 +1,27 @@
+/usr/lib/python3.10/site-packages/setuptools/dist.py:697: UserWarning: Usage of dash-separated 'description-file' will not be supported in future versions. Please use the underscore name 'description_file' instead
+  warnings.warn(
+running install
+running install_lib
+creating /build/python-mpv/pkg/python-mpv/usr
+creating /build/python-mpv/pkg/python-mpv/usr/lib
+creating /build/python-mpv/pkg/python-mpv/usr/lib/python3.10
+creating /build/python-mpv/pkg/python-mpv/usr/lib/python3.10/site-packages
+copying build/lib/mpv.py -> /build/python-mpv/pkg/python-mpv/usr/lib/python3.10/site-packages
+byte-compiling /build/python-mpv/pkg/python-mpv/usr/lib/python3.10/site-packages/mpv.py to mpv.cpython-310.pyc
+writing byte-compilation script '/tmp/tmp0hid_5ez.py'
+/usr/bin/python -Wignore:The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives:DeprecationWarning /tmp/tmp0hid_5ez.py
+removing /tmp/tmp0hid_5ez.py
+running install_egg_info
+running egg_info
+writing python_mpv.egg-info/PKG-INFO
+writing dependency_links to python_mpv.egg-info/dependency_links.txt
+writing requirements to python_mpv.egg-info/requires.txt
+writing top-level names to python_mpv.egg-info/top_level.txt
+reading manifest file 'python_mpv.egg-info/SOURCES.txt'
+writing manifest file 'python_mpv.egg-info/SOURCES.txt'
+Copying python_mpv.egg-info to /build/python-mpv/pkg/python-mpv/usr/lib/python3.10/site-packages/python_mpv-0.5.2-py3.10.egg-info
+running install_scripts
+install: creating directory '/build/python-mpv/pkg/python-mpv/usr/share'
+install: creating directory '/build/python-mpv/pkg/python-mpv/usr/share/doc'
+install: creating directory '/build/python-mpv/pkg/python-mpv/usr/share/doc/python-mpv'
+'README.rst' -> '/build/python-mpv/pkg/python-mpv/usr/share/doc/python-mpv/README.rst'
