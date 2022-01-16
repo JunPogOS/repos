@@ -11,8 +11,8 @@ source=('junpog-gui::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
-        mkdir -p "$pkgdir/$HOME/.config"
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
         cd "$srcdir/${pkgname}/.config"
-        cp -r qutebrowser "$pkgdir/$HOME/.config/qutebrowser"
+        cp -r qutebrowser "$pkgdir/usr/share/junpogos/.config/qutebrowser"
 }
 

@@ -11,7 +11,7 @@ source=('junpog-openbox::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
-        mkdir -p "$pkgdir/$HOME/.config"
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
         cd "$srcdir/${pkgname}/.config"
-        cp -r openbox "$pkgdir/$HOME/.config/openbox"
+        cp -r openbox "$pkgdir/usr/share/junpogos/.config/openbox"
 }

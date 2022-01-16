@@ -11,9 +11,9 @@ source=('junpog-mpd::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
-        mkdir -p "$pkgdir/$HOME/.config"
-        mkdir -p "$pkgdir/$HOME/.lyrics"
-        mkdir -p "$pkgdir/$HOME/music"
-        cp -r "$srcdir/${pkgname}/.config/ncmpcpp" "$pkgdir/$HOME/.config/ncmpcpp"
-        cp -r "$srcdir/${pkgname}/.config/mpd" "$pkgdir/$HOME/.config/mpd"
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
+        mkdir -p "$pkgdir/usr/share/junpogos/.lyrics"
+        mkdir -p "$pkgdir/usr/share/junpogos/music"
+        cp -r "$srcdir/${pkgname}/.config/ncmpcpp" "$pkgdir/usr/share/junpogos/.config/ncmpcpp"
+        cp -r "$srcdir/${pkgname}/.config/mpd" "$pkgdir/usr/share/junpogos/.config/mpd"
 }

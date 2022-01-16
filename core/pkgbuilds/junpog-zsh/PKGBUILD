@@ -11,8 +11,8 @@ source=('junpog-zsh::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
-        mkdir -p "$pkgdir/$HOME/.config"
-        cp "$srcdir/${pkgname}/.zshrc" "$pkgdir/$HOME/.zshrc"
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
+        cp "$srcdir/${pkgname}/.zshrc" "$pkgdir/usr/share/junpogos/.zshrc"
         cd "$srcdir/${pkgname}/.config"
-        cp -r zsh "$pkgdir/$HOME/.config/zsh"
+        cp -r zsh "$pkgdir/usr/share/junpogos/.config/zsh"
 }

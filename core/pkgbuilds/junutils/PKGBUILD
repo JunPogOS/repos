@@ -11,13 +11,13 @@ source=('junutils::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
-        mkdir -p "$pkgdir/$HOME/.local"
+        mkdir -p "$pkgdir/usr/share/junpogos/.local"
         cd "$srcdir/${pkgname}/.local"
-        cp -r scripts "$pkgdir/$HOME/.local/scripts"
-        mkdir -p "$pkgdir/$HOME/.config"
+        cp -r scripts "$pkgdir/usr/share/junpogos/.local/scripts"
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
         cd "$srcdir/${pkgname}/.config"
-        cp -r nvim "$pkgdir/$HOME/.config/nvim"
-        cp -r neofetch "$pkgdir/$HOME/.config/neofetch"
-        cp -r ranger "$pkgdir/$HOME/.config/ranger"
-        cp -r newsboat "$pkgdir/$HOME/.config/newsboat"
+        cp -r nvim "$pkgdir/usr/share/junpogos/.config/nvim"
+        cp -r neofetch "$pkgdir/usr/share/junpogos/.config/neofetch"
+        cp -r ranger "$pkgdir/usr/share/junpogos/.config/ranger"
+        cp -r newsboat "$pkgdir/usr/share/junpogos/.config/newsboat"
 }

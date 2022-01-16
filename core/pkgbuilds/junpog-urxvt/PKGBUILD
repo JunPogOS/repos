@@ -11,6 +11,6 @@ source=('junpog-urxvt::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
-        mkdir -p "$pkgdir/$HOME"
-        cp "$srcdir/${pkgname}/.Xresources" "$pkgdir/$HOME/.Xresources"
+        mkdir -p "$pkgdir/usr/share/junpogos"
+        cp "$srcdir/${pkgname}/.Xresources" "$pkgdir/usr/share/junpogos/.Xresources"
 }

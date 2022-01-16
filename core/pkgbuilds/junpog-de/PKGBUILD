@@ -11,8 +11,8 @@ source=('junpog-de::git+https://github.com/JunPogOS/configs.git')
 md5sums=('SKIP')
 
 package() {
-        mkdir -p "$pkgdir/$HOME/.config"
-        cp "$srcdir/${pkgname}/.xinitrc" "$pkgdir/$HOME/.xinitrc"
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
+        cp "$srcdir/${pkgname}/.xinitrc" "$pkgdir/usr/share/junpogos/.xinitrc"
         cd "$srcdir/${pkgname}/.config"
-        cp -r fehbg "$pkgdir/$HOME/.config/fehbg"
+        cp -r fehbg "$pkgdir/usr/share/junpogos/.config/fehbg"
 }
