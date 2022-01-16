@@ -11,7 +11,7 @@ fi
 
 cd $1
 mkdir building
-cp $2/PKGBUILD building/
+cp pkgbuilds/$2/PKGBUILD building/
 cd building
 makechrootpkg -u -c -r $CHROOT
 cd ..
