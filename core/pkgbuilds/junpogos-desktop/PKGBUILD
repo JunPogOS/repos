@@ -1,7 +1,0 @@
-# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
-pkgname='junpogos-desktop'
-pkgver=1.0
-pkgrel=1
-pkgdesc="Desktop Installation of JunPogOS, without additional programs"
-arch=('x86_64')
-depends=('junpogos-minimal' 'junpog-urxvt' 'junpog-audio' 'junpog-de')

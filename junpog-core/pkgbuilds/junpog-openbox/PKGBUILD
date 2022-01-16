@@ -1,0 +1,17 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-openbox'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Openbox config"
+arch=('x86_64')
+depends=('openbox' 'tint2')
+makedepends=('git')
+url="https://github.com/JunPogOS/configs"
+source=('junpog-openbox::git+https://github.com/JunPogOS/configs.git')
+md5sums=('SKIP')
+
+package() {
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
+        cd "$srcdir/${pkgname}/.config"
+        cp -r openbox "$pkgdir/usr/share/junpogos/.config/openbox"
+}

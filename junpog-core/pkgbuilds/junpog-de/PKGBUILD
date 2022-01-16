@@ -1,0 +1,18 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-de'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Collection of programs that makeup the junpog DE"
+arch=('x86_64')
+depends=('junpog-openbox' 'feh' 'dmenu' 'arandr' 'lxappearance' 'dunst' 'lxsession' 'xorg-server' 'xorg-xinit' 'xterm' 'ttc-iosevka' 'ttf-hanazono')
+makedepends=('git')
+url="https://github.com/JunPogOS/configs"
+source=('junpog-de::git+https://github.com/JunPogOS/configs.git')
+md5sums=('SKIP')
+
+package() {
+        mkdir -p "$pkgdir/usr/share/junpogos/.config"
+        cp "$srcdir/${pkgname}/.xinitrc" "$pkgdir/usr/share/junpogos/.xinitrc"
+        cd "$srcdir/${pkgname}/.config"
+        cp -r fehbg "$pkgdir/usr/share/junpogos/.config/fehbg"
+}
