@@ -19,3 +19,6 @@ cp building/*.pkg.tar.zst x86_64/
 rm -rf building
 cd x86_64
 repo-add $1.db.tar.gz *.pkg.tar.zst
+rm $1.db $1.files
+mv $1.db.tar.gz $1.db
+mv $1.file.tar.gz $1.files
