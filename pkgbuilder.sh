@@ -1,9 +1,9 @@
-if [ $1 -z ]
+if [ -z $1 ]
 then
 	echo "pass the repository name as $1, and the package name as $2"
 	exit
 fi
-if [ $2 -z ]
+if [ -z $2 ]
 then
 	echo "pass the repository name as $1, and the package name as $2"
 	exit
