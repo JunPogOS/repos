@@ -1,7 +1,0 @@
-# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
-pkgname='junbase'
-pkgver=1.0
-pkgrel=1
-pkgdesc="basic packages for JunPogOS"
-arch=('x86_64')
-depends=('base' 'fakeroot' 'sudo' 'binutils' 'gcc' 'autoconf' 'bison' 'flex' 'automake' 'groff' 'libtool' 'm4' 'make' 'patch' 'pkgconf' 'texinfo' 'which' 'man' 'git' 'cifs-utils' 'man-db' 'devtools')
