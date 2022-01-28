@@ -1,7 +1,0 @@
-# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
-pkgname='junpog-me'
-pkgver=1.0
-pkgrel=1
-pkgdesc="Collection of media editing packages"
-arch=('x86_64')
-depends=('krita' 'gimp' 'kdenlive' 'lmms')

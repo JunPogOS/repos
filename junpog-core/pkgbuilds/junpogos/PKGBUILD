@@ -1,7 +1,0 @@
-# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
-pkgname='junpogos'
-pkgver=1.0
-pkgrel=1
-pkgdesc="Full Installation of JunPogOS"
-arch=('x86_64')
-depends=('junpogos-desktop' 'junpog-mpd' 'ani-cli' 'hydrus' 'jellyfin-media-player' 'junpog-gui' 'junpog-me')
