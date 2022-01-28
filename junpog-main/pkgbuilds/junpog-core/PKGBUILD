@@ -1,0 +1,20 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-core'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Base collection of programs for JunPogOS"
+arch=('x86_64')
+depends=('arandr' 'base' 'sudo' 'neovim' 'autoconf' 'make' 'gcc' 'calc' 'cifs-utils' 'clang' 'exa' 'fakeroot' 'file' 'git' 'grep' 'groff' 'htop' 'lynx' 'make' 'man-db' 'neofetch' 'networkmanager' 'openssh' 'p7zip' 'ranger' 'pipewire' 'pipewire-pulse' 'pkgconf' 'pulsemixer' 'tree' 'ttf-hanazono' 'ttf-joypixels' 'w3m' 'wget' 'which' 'zsh' 'zsh-autosuggestions' 'zsh-completions' 'zsh-syntax-highlighting' 'ttc-iosevka' 'patch' 'bison')
+makedepends=('git')
+url="https://github.com/JunPogOS/configs"
+source=('junpog-core::git+https://github.com/JunPogOS/configs.git')
+md5sums=('SKIP')
+
+package() {
+        mkdir -p "$pkgdir/usr/share/junpogos/{.local,.config}"
+        cp "$srcdir/${pkgname}/.xinitrc" "$pkgdir/usr/share/junpogos/.xinitrc"
+        cp "$srcdir/${pkgname}/.Xresources" "$pkgdir/usr/share/junpogos/.Xresources"
+        cp "$srcdir/${pkgname}/.zshrc" "$pkgdir/usr/share/junpogos/.zshrc"
+        cp -r "$srcdir/${pkgname}/.local" "$pkgdir/usr/share/junpogos/.local"
+        cp -r "$srcdir/${pkgname}/.config" "$pkgdir/usr/share/junpogos/.config"
+}
