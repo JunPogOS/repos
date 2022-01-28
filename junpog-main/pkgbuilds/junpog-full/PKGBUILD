@@ -4,4 +4,4 @@ pkgver=1.0
 pkgrel=1
 pkgdesc="Collection of other programs for JunPogOS"
 arch=('x86_64')
-depends=('junpog-core' 'ani-cli' 'hydrus' 'jellyfinmediaplayer' 'claws-mail' 'dmenu' 'dunst' 'emacs' 'feh' 'gimp' 'gnucash' 'kdenlive' 'krita' 'keepassxc' 'lxappearance' 'lxsession' 'mpd' 'mpc' 'ncmpcpp' 'mpv' 'pcmanfm' 'qbittorrent' 'remmina' 'rxvt-unicode' 'unclutter' 'xorg-server' 'xorg-xinit' 'xterm' 'urxvt-perls')
+depends=('junpog-core' 'ani-cli' 'hydrus' 'jellyfin-media-player' 'claws-mail' 'dmenu' 'dunst' 'emacs' 'feh' 'gimp' 'gnucash' 'kdenlive' 'krita' 'keepassxc' 'lxappearance' 'lxsession' 'mpd' 'mpc' 'ncmpcpp' 'mpv' 'pcmanfm' 'qbittorrent' 'remmina' 'rxvt-unicode' 'unclutter' 'xorg-server' 'xorg-xinit' 'xterm' 'urxvt-perls')
